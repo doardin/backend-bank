@@ -33,11 +33,11 @@ public class Transaction {
 
     @ManyToOne
     @JoinColumn(name = "senderId")
-    private Wallet sender;
+    private Wallet payer;
 
     @ManyToOne
     @JoinColumn(name = "recipientId")
-    private Wallet recipient;
+    private Wallet payee;
 
     @ManyToOne
     @JoinColumn(name = "movementTypeId")
